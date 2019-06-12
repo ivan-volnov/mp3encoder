@@ -60,6 +60,6 @@ bool Mp3File::encode() MAYTHROW
         fwrite(mp3_buffer, 1, bytes, file);
     }
 
-    lame_mp3_tags_fid(gfp, file);
+//    lame_mp3_tags_fid(gfp, file);
     return true;
 }
