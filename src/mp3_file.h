@@ -9,13 +9,13 @@ using lame_global_flags = struct lame_global_struct;
 class Mp3File
 {
 public:
-    Mp3File(const char *path, WaveFile &wave) MAYTHROW;
-    ~Mp3File();
-
     Mp3File(const Mp3File &) = delete;
     Mp3File(Mp3File &&) = delete;
     Mp3File &operator = (const Mp3File &) = delete;
     Mp3File &operator = (Mp3File &&) = delete;
+
+    Mp3File(const char *path, WaveFile &wave) MAYTHROW;
+    ~Mp3File();
 
 public:
     bool encode() MAYTHROW;
