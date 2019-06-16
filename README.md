@@ -15,4 +15,4 @@ cp ../samples/*.wav .
 ./mp3encoder .
 ```
 
-It works well in Mac and Linux and it's also supposed to work in Windows, but I didn't test it yet.
+It works well in Mac and Linux and it's also supposed to work in Windows, but I haven't tested it yet.
